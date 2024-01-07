@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    margin: 0px;
+
+}
+
+.main-container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-1 {
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 39px 15px 39px;
+    margin: 15px;
+    width: 375px;
+
+
+}
+
+.or {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+
+.or p {
+    margin: 0px 20px;
+    color: grey;
+}
+
+.or hr {
+    width: 50%;
+    height: 10%;
+    background-color: grey;
+
+
+}
+
+.container-2 {
+    background-color: #ffffff;
+    border: 1px solid white;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px grey;
+    padding: 17px 82px 17px 82px;
+    width: 375px;
+
+
+}
+
+.form,
+input,
+p,
+a,
+.button,
+br {
+    background-color: #ffffff;
+
+}
+
+.inputs {
+    background-color: #ffffff;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: "Grand Hotel";
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin: 30px 0px 30px 0px;
+    background-color: inherit;
+
+}
+
+.inputs input {
+    width: 18rem;
+    height: 2.5rem;
+    border: 1px solid #FAFAFA;
+    border-radius: 1px;
+    background-color: #FAFAFA;
+    text-indent: 4px;
+    font-size: 12px;
+    box-shadow: 0px 0px 1px grey;
+}
+
+.inputs input:focus-visible {
+    border: 1px solid black;
+    outline: none;
+}
+
+.button:disabled {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-2 a {
+    text-decoration: none;
+    color: #4DB5F9;
+    font-weight: bold;
+}
+
+button:disabled {
+    height: 35px;
+    width: 100%;
+    background-color: #4DB5F9;
+    border: 1px solid #4DB5F9;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+button:enabled {
+    height: 35px;
+    width: 100%;
+    background-color: #0095F6;
+    border: 1px solid #4DB5F9;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+
+
+}
+
+form {
+
+    text-align: center;
+    background-color: #ffffff;
+}
+
+form a {
+    font-size: 13px;
+    color: #3866A3;
+    background-color: #ffffff;
+    text-decoration: none;
+
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download span {
+    margin-bottom: 20px;
+}

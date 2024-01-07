@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika+Negative:wght@700&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body onload="manageHomePage()">
+  <div class="main-container" data-profile="true" data-explore="true" data-home="true" data-chat="true">
+    <div class="nav" id="nav-bar" data-profile="true" data-explore="true" data-home="true" data-chat="true">
+      <div data-explore="true" data-home="true" data-chat="true" class="heading" data-explore="true">
+        <span data-explore="true" data-home="true" data-chat="true" id="nav-title" data-explore="true">Instagram</span>
+        <div data-explore="true" data-home="true" data-chat="true" class="insta" data-explore="true">
+          <div data-explore="true" data-home="true" data-chat="true" class="insta-circle" data-explore="true"></div>
+        </div>
+      </div>
+
+      <ul class="main-nav-ul" data-more="true" data-profile="true" data-explore="true" data-home="true"
+        data-chat="true">
+        <li class="nav-home" data-home="true"><i data-home="true" class="material-icons"
+            style="font-size: 35px;">home</i><a data-home="true" id="nav-home" class="nav-labels" href="#">Home</a></li>
+        <li data-search="true" class="nav-search"><i data-search="true" class="fa fa-search"
+            style="font-size: 25px;margin-left: 5px;"></i><a id="nav-search" class="nav-labels" href="#"
+            style="margin-left: 15px;" data-search="true">Search</a>
+
+        </li>
+        <div id="search" data-search="true">
+          <span data-search="true" id="search-title">Search</span>
+          <input placeholder="Search" data-search="true" type="search" name="search" id="search-box">
+          <div data-search="true" id="recents-searches">
+            <span data-search="true" id="recents-title">Recents</span>
+            <div data-search="true" id="recents-2"><span data-search="true" id="recents-2-title">No Recents
+                Searches</span></div>
+          </div>
+        </div>
+
+
+        <li data-explore="true" class="nav-explore"><i data-explore="true" class="fa fa-compass"
+            style="font-size: 25px;margin-left: 5px;"></i><a id="nav-explore" class="nav-labels" href="#"
+            data-explore="true" style="margin-left: 17px;">Explore</a></li>
+        <li class="nav-reels"><i
+            style="border:2px solid white; padding:7px 9px;font-size: 7px;border-radius: 10px;margin-left: 5px;"
+            class="fa fa-play"></i><a style="margin-left: 15px;" id="nav-reels" class="nav-labels" href="#">Reels</a>
+        </li>
+        <li class="nav-notifs" data-notif="true"><i style="font-size: 25px;margin-left: 5px;"
+            class="fa-regular fa-heart" data-notif="true"></i><a id="nav-notifs" class="nav-labels"
+            style="margin-left: 17px;" href="#" data-notif="true">Notifications</a>
+        </li>
+        <div id="notif" data-notif="true">
+
+
+        </div>
+        <li class="nav-messages" data-chat="true"><i data-chat="true" style="font-size: 25px;margin-left: 5px;"
+            class='far fa-comment-dots'></i><a data-chat="true" id="nav-messages" class="nav-labels" href="#"
+            style="margin-left: 17px;">Messages</a></li>
+        <li class="nav-create"><i class="fa fa-plus"
+            style="border:2px solid white; padding:3px 5px;font-size: 15px;margin-left: 4px;border-radius: 10px;"></i><a
+            id="nav-create" class="nav-labels" href="#" style="margin-left: 15px;">Create</a></li>
+        <li class="nav-profile" id="profile" data-profile="true">
+          <div class="dp" data-profile="true">
+            <img style="border-radius: 100%;" src="./images/krishna-dp.jpg" width="30px" data-profile="true">
+          </div>
+          <a style="margin-left: 15px;" id="nav-profile" class="nav-labels" href="#" data-profile="true">Profile</a>
+        </li>
+        <li class="nav-3line nav-more" data-more="true"><i data-more="true" style="font-size: 25px;margin-left: 5px;"
+            class="fa fa-bars"><a style="margin-left: 17px;" id="nav-more" data-more="true" class="nav-labels"
+              href="#">More</a></i>
+          <ul class="nav-more-options" data-more="true">
+            <li id="toggle-mode" data-more="true">
+              Dark/Light Mode
+
+              <label data-more="true" class="switch">
+                <input class="mode-switch" data-more="true" type="checkbox">
+                <span data-more="true" class="slider round"></span>
+              </label>
+            </li>
+            <li id="logout" data-more="true"><a data-more="true">Logout</a></li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+    </div>
+    <div class="home-page" data-home="true">
+      <div class="home-story" data-home="true">
+        <button data-home="true" class="storybtn back-story" onclick="backStory()"><i class="fa-solid fa-caret-left"
+            data-home="true"></i></button>
+        <div class="story-section" data-home="true">
+        </div>
+        <button data-home="true" class="storybtn next-story" onclick="nextStory()"><i class="fa-solid fa-caret-right"
+            data-home="true"></i></button>
+      </div>
+      <div class="posts-section" data-home="true">
+        <div data-home="true" class="load-more-posts">...</div>
+      </div>
+    </div>
+    <div class="explore-page" data-explore="true"></div>
+    <div class="loader">
+      <div class="circle" id="circle-1"></div>
+      <div class="circle" id="circle-2"></div>
+      <div class="circle" id="circle-3"></div>
+    </div>
+    <div class="chat-page" data-chat="true">
+      <div class="main-chats" data-chat="true"></div>
+      <div class="send-messages-box" data-chat="true">
+        <div class="circle"><i class="fa-brands fa-facebook-messenger" style="color: white;font-size: 50px;"></i></div>
+        <span style="font-size: 20px; margin: 15px 0 5px 0;">Your messages</span>
+        <span style="margin-bottom: 15px;">Send private photos and messages to a friend or group.</span>
+        <button
+          style="width: 150px; height: 30px; color:white; background-color: #1877F2;border-radius: 10px;border:none;">Send
+          message</button>
+      </div>
+    </div>
+    <div class="profile-page" data-profile="true">
+      <div class="profile-page-display-data" data-profile="true">
+        <div class="profile-page-dp" data-profile="true">
+          <img src="images/krishna-dp.jpg" alt="" data-profile="true">
+        </div>
+        <div class="profile-page-data" data-profile="true">
+          <div class="profile-first-row" data-profile="true">
+            <span class="profile-first-row-username" style="align-self: left;" data-profile="true">radhe</span>
+            <button class="profile-buttons" id="edit-profile-button" data-profile="true">Edit Profile</button>
+            <button class="profile-buttons" id="view-archive-button" data-profile="true">View Archive</button>
+            <button class="p-set" id="profile-settings" data-profile="true"><i class="p-set fa-solid fa-gear"
+                data-profile="true"></i></button>
+            <a id="logoutt" data-more="true">Logout</a>
+          </div>
+          <div class="profile-second-row" data-profile="true"><span class="post-count" data-profile="true"><span
+                id="p-count" style="font-weight: bold;" data-profile="true">0</span> Posts</span> <span
+              class="followers-count" data-profile="true"><span id="p-count" style="font-weight: bold;"
+                data-profile="true">96</span>
+              Followers</span> <span class="following-count" data-profile="true"><span id="p-count"
+                style="font-weight: bold;" data-profile="true">78</span>
+              Following</span>
+          </div>
+          <div class="profile-third-row" data-profile="true">
+            <p data-profile="true">
+              Radhe Radhe 🙏♥️
+            </p>
+            <p data-profile="true">
+
+              Discipline & Solitude>>>
+            </p>
+            <p data-profile="true">
+
+              Delhi 📍
+            </p>
+            <p data-profile="true">
+
+              Coder/Shayar/...
+            </p>
+            <p data-profile="true">
+
+              May Radharani Bless uh ♥️
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-post-section" data-profile="true">
+        <div class="profile-posts-options" data-profile="true">
+          <button class="profile-post-buttons active-profile-button" data-profile="true"><i
+              class="fa-solid fa-table-cells" data-profile="true"></i>
+            <span class="post-button-text" data-profile="true">POSTS</span></button>
+          <button class="profile-post-buttons" data-profile="true"><i class="fa fa-play"
+              style="border:1px solid white; padding:5px 6px;font-size: 7px;border-radius: 6px;"
+              data-profile="true"></i>
+            <span class="post-button-text" data-profile="true">REELS</span></button>
+          <button class="profile-post-buttons" data-profile="true"><i class="fa-regular fa-bookmark"
+              data-profile="true"></i>
+            <span class="post-button-text" data-profile="true">SAVED</span></button>
+          <button class="profile-post-buttons" data-profile="true"><i class="fa-solid fa-id-card-clip"
+              data-profile="true"></i>
+            <span class="post-button-text" data-profile="true">TAGGED</span></button>
+        </div>
+        <div class="profile-posts" data-profile="true">
+          Nothing is here
+        </div>
+      </div>
+      <div class="profile-footer" data-profile="true">
+        <ul data-profile="true">
+          <li data-profile="true">Meta</li>
+          <li data-profile="true">About</li>
+          <li data-profile="true">Blog</li>
+          <li data-profile="true">Jobs</li>
+          <li data-profile="true">Help</li>
+          <li data-profile="true">API</li>
+          <li data-profile="true">Privacy</li>
+          <li data-profile="true">Terms</li>
+          <li data-profile="true">Locations</li>
+          <li data-profile="true">Instagram Lite</li>
+          <li data-profile="true">Threads</li>
+          <li data-profile="true">Contact uploading and non-users</li>
+          <li data-profile="true">Meta Verified</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <img class="loadgif" src="loading.gif" alt="">
+</body>
+<script src="main.js"></script>
+
+</html>

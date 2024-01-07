@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <base href="/">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="main-container">
+
+    <div class="container-1">
+      <div class="heading">Instagram</div>
+      <form id="login-form">
+        <div class="inputs">
+          <input id="username-login" type="text" placeholder="Phone number, username, or email"><br>
+          <br>
+          <input id="pass-login" type="password" placeholder="Password">
+
+        </div>
+        <div class="button">
+          <br>
+          <button disabled type="button" id="login" value="Log in" onClick="loginUser()">Log in</button>
+
+        </div>
+        <br>
+        <div class=" or">
+          <hr>
+          <p>OR</p>
+          <hr>
+        </div>
+        <br>
+        <i class="fa-brands fa-square-facebook" style="margin-right: 5px;"></i><a class="fb" href="#">Log in
+          with Facebook</a>
+        <br>
+
+        <span id="wrong-login" style="font-size: 16px;color: rgb(255, 59, 59);"><br>Sorry, your
+          password
+          was incorrect.
+          Please double-check your password.
+          <br></span>
+
+        <br>
+        <a href="#">Forgotten Your Password?</a>
+      </form>
+      <form id="signin-form">
+        <span style="color: #737373;font-size: 18px;font-weight:400;">Sign up to see photos and videos from
+          your friends.</span>
+        <br>
+        <br>
+        <button id="login-fb">Login with Facebook</button>
+        <br>
+        <br>
+        <div class=" or">
+          <hr>
+          <p>OR</p>
+          <hr>
+        </div>
+        <br>
+        <div class="inputs">
+          <input type="text" placeholder="Mobile number or email address"><br>
+          <br>
+          <input type="text" placeholder="Full Name"><br>
+          <br>
+          <input type="text" placeholder="Username"><br>
+          <br>
+          <input type="password" placeholder="Password">
+          <br>
+          <br>
+          <span style="color: #737373;font-size: 14px;font-weight:400;">People who use our service may have uploaded
+            your contact information to Instagram. <a href="
+            #">Learn
+              more</a></span>
+          <br><br>
+          <span style="color: #737373;font-size: 14px;font-weight:400;">By sigining up, you agree to our <a
+              href="#">Terms, Privacy policy</a> and <a href="#">Cookies Policy</a></span>
+          <br>
+          <br>
+          <button disabled id="sign-in-button" onclick="signup()">Sign Up</button>
+          <br>
+          <br>
+        </div>
+      </form>
+    </div>
+    <div class="container-2">
+      <p id="sign-to-login">Don't have an account? <a href="#" onClick="switchPage('sign')">Sign
+          up</a></p>
+      <p id="login-to-sign">Have an account? <a href="#" onClick="switchPage('login')">Log In</a>
+      </p>
+    </div>
+    <div class="download">
+      <span>Get the App</span>
+      <div class="images">
+        <img src="images/applestore.png" width="140px" />
+        <img src="images/playstore.png" width="140px" />
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
