@@ -32,7 +32,7 @@ const loginUser = () => {
         if ((user.username == loginUsername.value || user.noORemail == loginUsername.value) && user.pass == loginPassword.value) {
             localStorage.setItem('isLoggedIn', 'true')
             localStorage.setItem('loggerID', `${id}`)
-            window.open('/instagram-clone/main-page/main.html', '_self')
+            window.open('main-page/main.html', '_self')
             return;
         };
     }
